@@ -1,0 +1,6 @@
+- service: npmpublisher
+  command: npm run lint
+- service: npmpublisher
+  command: npm test
+- service: npmpublisher
+  command: npm run update-and-publish
