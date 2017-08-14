@@ -2,6 +2,8 @@
 const argv = require('minimist')(process.argv.slice(2));
 const EnvUtil = require('./EnvUtil');
 
+console.log('if this logs we\'ve already failed');
+
 checkArgs();
 const envUtil = new EnvUtil(argv.bucket, argv.key);
 envUtil.getEnvVariables()
